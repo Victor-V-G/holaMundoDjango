@@ -1,0 +1,13 @@
+html{
+    display: flex;
+    background-color: #2688d4;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+ul{
+    font-size: 50px;
+    align-items: center;
+    
+}
