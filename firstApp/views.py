@@ -12,3 +12,12 @@ def displayDateTime(request):
     dt = datetime.datetime.now()
     s = "<b>Fecha y Hora Actual: </b>" + str(dt)
     return HttpResponse(s)
+
+
+def renderTemplate(request):
+    data = {"Nombre" : "ConPusEnElAno"}
+    return render(request, 'templatesFirstApp/firstAppTemplates.html', data)
+
+
+def infoUsuario(request):
+    return render(request, 'templatesFirstApp/userInfoTemplate.html')
